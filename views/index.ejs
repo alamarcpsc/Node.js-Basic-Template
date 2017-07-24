@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>index page</title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+</head>
+<body>
+<h1>Random number from random.org</h1>
+<p>here is your number: <%= randomNumber%></p>
+<form action="/" method="post">
+    Min Number: <input type="text" name="minNumber" maxlength="10" value="<%= minNumber%>" required>
+    <br>
+    Max Number: <input type="text" name="maxNumber" maxlength="10" value="<%= maxNumber%>" required>
+    <br>
+    <input class="submit" type="submit" value="Submit">
+</form>
+</body>
+</html>
